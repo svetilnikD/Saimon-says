@@ -55,3 +55,7 @@
   - Последовательность введена неправильно
 6. Подсчёт очков
 7. Завершение игры
+
+
+## Use Case схема
+<img width="468" height="861" src="https://github.com/svetilnikD/Saimon-says/blob/main/USEcaSe.png"/>
