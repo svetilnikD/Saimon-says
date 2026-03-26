@@ -1,6 +1,6 @@
 import tkinter as tk
 
-# ===== ФУНКЦИИ =====
+# функции
 def start_game():
     name = name_entry.get()
     print(f"Игрок: {name}, сложность: {difficulty.get()}")
@@ -24,7 +24,7 @@ def set_difficulty(level):
     label_diff.config(text=f"Сложность: {level}")
 
 
-# ===== ОСНОВНОЕ ОКНО =====
+# Окно
 root = tk.Tk()
 root.title("Simon Says")
 root.geometry("400x500")
@@ -32,7 +32,7 @@ root.configure(bg="#1f2a30")
 
 difficulty = tk.StringVar(value="Легко")
 
-# ===== ЗАГОЛОВОК =====
+# Заголовок
 tk.Label(root, text="Saimon says",
          font=("Arial", 24),
          fg="white", bg="#1f2a30").pack(pady=20)
@@ -45,7 +45,7 @@ tk.Label(root, text="Введите имя",
 name_entry = tk.Entry(root, font=("Arial", 14), justify="center")
 name_entry.pack(pady=10, ipadx=50, ipady=8)
 
-# ===== СЛОЖНОСТЬ =====
+# Выбор сложности
 tk.Label(root, text="Сложность",
          font=("Arial", 12),
          fg="gray", bg="#1f2a30").pack(pady=10)
@@ -69,7 +69,7 @@ label_diff = tk.Label(root, text="Сложность: Легко",
                       fg="white", bg="#1f2a30")
 label_diff.pack(pady=5)
 
-# ===== КНОПКИ =====
+# кнопки
 def styled_button(text, command):
     return tk.Button(root,
                      text=text,
